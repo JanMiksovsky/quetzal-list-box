@@ -36,7 +36,7 @@ The selection behavior generally follows that of Microsoft Windows:
 polyfill-next-selector {
   content: '*';
 }
-content /content/ * {
+::content * {
   /* HACK: explicit background works around shadow reprojection rendering bug. */
   background: white;
   box-sizing: border-box;
@@ -49,7 +49,7 @@ content /content/ * {
 polyfill-next-selector {
   content: ':host > .polymer-selected';
 }
-content /content/ .polymer-selected {
+::content .polymer-selected {
   background: highlight;
   color: highlighttext;
 }
